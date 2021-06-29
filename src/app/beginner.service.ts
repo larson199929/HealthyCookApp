@@ -9,8 +9,9 @@ import { Beginner } from './model/beginner';
 
 export class BeginnerService {
 
+    private baseURL= 'https://apphealthycook.herokuapp.com/api/beginners';
   //private baseURL= 'http://localhost:8080/api/beginners';
-  private baseURL= 'http://localhost:5000/beginners';
+  //private baseURL= 'http://localhost:5000/beginners';
 
   constructor( private http: HttpClient) { }
 
