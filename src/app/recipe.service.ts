@@ -7,7 +7,9 @@ import { Recipe } from './model/recipe';
   providedIn: 'root'
 })
 export class RecipeService {
-  private baseURL = 'http://localhost:5000/recipe';
+  
+    private baseURL= 'https://apphealthycook.herokuapp.com/api/recipes';
+  //private baseURL = 'http://localhost:5000/recipe';
   constructor( private http: HttpClient ) { }
   createRecipe(recipe: Object): Observable<Object>{
     return this.http.post(`${this.baseURL}`,recipe);
