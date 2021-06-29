@@ -9,8 +9,8 @@ import { Chef } from './model/chef';
 
 export class ChefService {
 
-
-  private baseURL= 'http://localhost:5000/chefs';
+private baseURL= 'https://apphealthycook.herokuapp.com/api/chefs';
+  //private baseURL= 'http://localhost:5000/chefs';
 
   constructor( private http: HttpClient) { }
 
