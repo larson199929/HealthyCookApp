@@ -1,0 +1,6 @@
+{
+    "/:resource/searchByLastname/:lastName": "/:resource?lastName=:lastName",
+    "/:resource/searchByFirstname/:firstName": "/:resource?firstName=:firstName",
+    "/:resource/searchByFirstnameAndLastname/:firstName/:lastName": "/:resource?firstName=:firstName&lastName=:lastName",
+    "/:resource/searchByDni/:dni": "/:resource?dni=:dni"
+}

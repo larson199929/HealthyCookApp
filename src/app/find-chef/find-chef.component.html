@@ -1,0 +1,97 @@
+<br/>
+<h2>Search Chef</h2>
+<br/>
+<div>
+    <form class="row g-3" (ngSubmit)="searchChefById()">
+        <div class="col-auto">
+            <label class="form-control-plaintext" for="id">Id :</label>
+        </div>
+        <div class="col-auto">
+            <input type="text" class="form-control" id="id" 
+            name="id" required [(ngModel)]="id" placeholder="Search Chef by Id" />
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-success">Search</button>
+        </div>
+    </form>
+</div>
+<br/>
+<div>
+    <form class="row g-3" (ngSubmit)="searchChefByDNI()">
+        <div class="col-auto">
+            <label class="form-control-plaintext" for="dni">DNI :</label>
+        </div>
+        <div class="col-auto">
+            <input type="text" class="form-control" id="dni" 
+            name="dni" required [(ngModel)]="dni" placeholder="Search Chef by dni" />
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-success">Search</button>
+        </div>
+    </form>
+</div>
+<br/>
+<div>
+    <form class="row g-3" (ngSubmit)="searchChefByFirstName()">
+        <div class="col-auto">
+            <label class="form-control-plaintext" for="firstName">FirstName :</label>
+        </div>
+        <div class="col-auto">
+            <input type="text" class="form-control" id="firstName" 
+            name="firstName" required [(ngModel)]="firstName" placeholder="Search Chef by FirstName" />
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-success">Search</button>
+        </div>
+    </form>
+</div>
+<br/>
+<div>
+    <form class="row g-3" (ngSubmit)="searchChefByLastName()">
+        <div class="col-auto">
+            <label class="form-control-plaintext" for="lastName">LastName :</label>
+        </div>
+        <div class="col-auto">
+            <input type="text" class="form-control" id="lastName" 
+            name="lastName" required [(ngModel)]="lastName" placeholder="Search Chef by Lastname" />
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-success">Search</button>
+        </div>
+    </form>
+</div>
+<br/>
+<div>
+    <form class="row g-3" (ngSubmit)="searchChefByFirstNameAndLastName()">
+        <div class="col-auto">
+            <label class="form-control-plaintext" for="firstName">FirstName :</label>
+        </div>
+        <div class="col-auto">
+            <input type="text" class="form-control" id="firstName2" 
+            name="firstName2" required [(ngModel)]="firstName2" placeholder="Search Chef" />
+        </div>
+        <div class="col-auto">
+            <label class="form-control-plaintext" for="lastName">LastName :</label>
+        </div>
+        <div class="col-auto">
+            <input type="text" class="form-control" id="lastName2" 
+            name="lastName2" required [(ngModel)]="lastName2" placeholder="Search Chef" />
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-success">Search</button>
+        </div>
+    </form>
+</div>
+<br/>
+<ul>
+    <li *ngIf="chef">
+        <h4>{{ chef.id }} - {{ chef.firstName }} {{ chef.lastName }} - {{chef.email}}</h4>
+    </li>
+</ul>
+<ul>
+    <li *ngFor="let chef of chefs">
+        <h4>{{ chef.id }} - {{ chef.firstName }} {{ chef.lastName }} - {{chef.email}}</h4>
+    </li>
+</ul>
+
+

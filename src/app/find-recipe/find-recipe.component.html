@@ -1,0 +1,33 @@
+<br/>
+<h2>Search Recipe</h2>
+<br/>
+<div>
+    <form class="row g-3" (ngSubmit)="searchRecipeById()">
+        <div class="col-auto">
+            <label class="form-control-plaintext" for="id">Id :</label>
+        </div>
+        <div class="col-auto">
+            <input type="text" class="form-control" id="id" 
+            name="id" required [(ngModel)]="id" placeholder="Search Recipe by Id" />
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-success">Search</button>
+        </div>
+    </form>
+</div>
+<br/>
+<div>
+    <form class="row g-3" (ngSubmit)="searchRecipeByDate()">
+        <div class="col-auto">
+            <label class="form-control-plaintext" for="publication_date">Publication Date :</label>
+        </div>
+        <div class="col-auto">
+            <input type="text" class="form-control" id="publication_date" 
+            name="publication_date" required [(ngModel)]="publication_date" placeholder="Search Recipe by Publication Date" />
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-success">Search</button>
+        </div>
+    </form>
+</div>
+<br/>

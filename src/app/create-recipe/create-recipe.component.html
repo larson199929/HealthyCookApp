@@ -1,0 +1,34 @@
+<br/>
+<h2>Registro de Recipe</h2>
+<br/>
+<div>
+    <form (ngSubmit)="(insertRecipe())">
+        <div>
+            <input type="hidden" id="RecipeId" name="RecipeId"
+            required [(ngModel)]="recipe.id">             
+        </div>
+        
+        <div class="mb-3">
+            <label for="description">Description :</label>
+            <input type="textarea" class="form-control" id="description"
+            name= "description" placeholder="Description"
+            required [(ngModel)]="recipe.description" />
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="PublicationDate">Publication Date :</label>
+            <input type="date" class="form-control" id="publicationdate"
+            name= "publicationdate" placeholder="PublicationDate"
+            required [(ngModel)]="recipe.publication_date" />
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="assessment">Assessment :</label>
+            <input type="text" class="form-control" id="assessment"
+            name="assessment" placeholder="Assessment"
+            required [(ngModel)]="recipe.assessment" />
+        </div>
+        <button type="submit" class ="btn btn-success">Save</button>
+
+    </form>
+</div>
