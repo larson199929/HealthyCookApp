@@ -19,6 +19,8 @@ import { CreateChefComponent } from './create-chef/create-chef.component';
 import { ListChefComponent } from './list-chef/list-chef.component';
 import { FindChefComponent } from './find-chef/find-chef.component';
 import { UpdateChefComponent } from './update-chef/update-chef.component';
+import { FindByIngredientComponent } from './find-by-ingredient/find-by-ingredient.component';
+import { RecipeZanahoriaComponent } from './recipe-zanahoria/recipe-zanahoria.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { UpdateChefComponent } from './update-chef/update-chef.component';
     CreateChefComponent,
     ListChefComponent,
     FindChefComponent,
-    UpdateChefComponent
+    UpdateChefComponent,
+    FindByIngredientComponent,
+    RecipeZanahoriaComponent
   ],
   imports: [
     BrowserModule,

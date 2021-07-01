@@ -1,0 +1,139 @@
+<select name="selectedQuantity" id="aantal" class="form-control" [(ngModel)]="selectedQuantity"
+    style="width: 25%; margin-top: 15px; margin-left: 15px;">
+    <option *ngFor="let option of options" [value]="option">{{option}}</option>
+</select>
+
+<div *ngIf="selectedQuantity === 'Zanahoria'">
+    <div class="cont_principal">
+        <div class="cont_central">
+            <div class="cont_modal cont_modal_active">
+                <div class="cont_photo">
+                    <div class="cont_img_back">
+                        <img src="https://juntossabemejor.com/wp-content/uploads/2020/04/SLICE-TORTA-DE-ZANAHORIA-3-575x1024.jpg"
+                            alt="" />
+                    </div>
+                    <div class="cont_mins">
+                        <div class="sub_mins">
+                            <h3>45</h3>
+                            <span>MIN</span>
+                        </div>
+                        <div class="cont_icon_right">
+                            <a routerLink="recipe/pastel-zanahoria"> <i class="material-icons">&#xE8E7;</i></a>
+                        </div>
+                    </div>
+                    <div class="cont_servings">
+                        <h3>6</h3>
+                        <span>PORCIONES</span>
+                    </div>
+                    <div class="cont_detalles">
+                        <h3>Pastel de Zanahoria</h3>
+                        <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis est est aliquam, sed
+                            faucibus massa lobortis. Maecenas non est justo.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div *ngIf="selectedQuantity === 'Pollo'">
+    <div class="cont_principal">
+        <div class="cont_central">
+            <div class="cont_modal cont_modal_active">
+                <div class="cont_photo">
+                    <div class="cont_img_back">
+                        <img src="https://i.imgur.com/0WdoSCB.png"
+                            alt="Sopa de pollito" />
+                    </div>
+                    <div class="cont_mins">
+                        <div class="sub_mins">
+                            <h3>50</h3>
+                            <span>MIN</span>
+                        </div>
+                        <div class="cont_icon_right">
+                            <a href="#"> <i class="material-icons">&#xE8E7;</i></a>
+                        </div>
+                    </div>
+                    <div class="cont_servings">
+                        <h3>4</h3>
+                        <span>PORCIONES</span>
+                    </div>
+                    <div class="cont_detalles">
+                        <h3>Sopa de pollo</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis est est aliquam, sed
+                            faucibus massa lobortis. Maecenas non est justo.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="selectedQuantity === 'Patatas'">
+    <div class="cont_principal">
+        <div class="cont_central">
+            <div class="cont_modal cont_modal_active">
+                <div class="cont_photo">
+                    <div class="cont_img_back">
+                        <img src="https://i.imgur.com/9d4Tf2L.png"
+                            alt="Ensalada de Patatas owo" />
+                    </div>
+                    <div class="cont_mins">
+                        <div class="sub_mins">
+                            <h3>50</h3>
+                            <span>MIN</span>
+                        </div>
+                        <div class="cont_icon_right">
+                            <a href="#"> <i class="material-icons">&#e887;</i></a>
+                        </div>
+                    </div>
+                    <div class="cont_servings">
+                        <h3>4</h3>
+                        <span>PORCIONES</span>
+                    </div>
+                    <div class="cont_detalles">
+                        <h3>Ensalada de Patatas</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis est est aliquam, sed
+                            faucibus massa lobortis. Maecenas non est justo.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="selectedQuantity === 'Fideos'">
+    <div class="cont_principal">
+        <div class="cont_central">
+            <div class="cont_modal cont_modal_active">
+                <div class="cont_photo">
+                    <div class="cont_img_back">
+                        <img src="https://i.imgur.com/CBpCBtP.png"
+                            alt="Ensalada de fideos sin Zanahoria" />
+                    </div>
+                    <div class="cont_mins">
+                        <div class="sub_mins">
+                            <h3>50</h3>
+                            <span>MIN</span>
+                        </div>
+                        <div class="cont_icon_right">
+                            <a href="#"> <i class="material-icons">&#xE8E7;</i></a>
+                        </div>
+                    </div>
+                    <div class="cont_servings">
+                        <h3>4</h3>
+                        <span>PORCIONES</span>
+                    </div>
+                    <div class="cont_detalles">
+                        <h3>Ensalada de fideos</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis est est aliquam, sed
+                            faucibus massa lobortis. Maecenas non est justo.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
