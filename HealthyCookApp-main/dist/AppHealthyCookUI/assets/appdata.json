@@ -1,0 +1,79 @@
+{
+  "beginners": [
+    {
+      "id": 1,
+      "firstname": "Raul",
+      "lastname": "Romero",
+      "dni": "12345678",
+      "address": "Los Molinos 639",
+      "phone": "12345678\n",
+      "email": "a@upc.edu.pe\n"
+    },
+    {
+      "id": 2,
+      "firstname": "Manuel",
+      "lastname": "Hernandez\n",
+      "dni": "87654321",
+      "address": "Av. Alcazar 521",
+      "phone": "98765432",
+      "email": "b@upc.edu.pe"
+    }
+  ] ,
+  "chefs": [
+    {
+      "id": 1,
+      "firstName": "Sebastian",
+      "lastName": "Montes",
+      "dni": "75754845",
+      "address": "larson 999",
+      "phone": "924773421",
+      "email": "sebas@larson.com.pe"
+    },
+    {
+      "id": 2,
+      "firstName": "david",
+      "lastName": "condori",
+      "dni": "45562358",
+      "address": "dave 996",
+      "phone": "996956865",
+      "email": "dave@condori.com.pe"
+    },
+    {
+      "id": 3,
+      "firstName": "aaron",
+      "lastName": "molina",
+      "dni": "86262656",
+      "address": "katon 066",
+      "phone": "998652423",
+      "email": "aaron@katon.com.pe"
+    },
+    {
+      "id": 4,
+      "firstName": "mimi",
+      "lastName": "sarmiento",
+      "dni": "47852123",
+      "address": "limonada 322",
+      "phone": "998565324",
+      "email": "mimimi@sarmi.com.pe"
+    },
+    {
+      "id": 5,
+      "firstName": "aoi",
+      "lastName": "minami",
+      "dni": "75451258",
+      "address": "Aoinimani 233",
+      "phone": "985784124",
+      "email": "aoini@minami.com.pe"
+    },
+    {
+      "id": 6,
+      "firstName": "utaha",
+      "lastName": "utako",
+      "dni": "75375458",
+      "address": "kasumi 123",
+      "phone": "998612124",
+      "email": "kazumiutako@feel.com"
+    }
+  ],
+  "bookings": []
+}
